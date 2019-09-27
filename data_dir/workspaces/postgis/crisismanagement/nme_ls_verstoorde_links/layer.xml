@@ -1,0 +1,15 @@
+<layer>
+  <name>nme_ls_verstoorde_links</name>
+  <id>LayerInfoImpl-1dbf8519:16971582d12:-7ff2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-1dbf8519:16971582d12:-7ff5</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1dbf8519:16971582d12:-7ff3</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

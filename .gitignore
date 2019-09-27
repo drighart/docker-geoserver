@@ -1,0 +1,5 @@
+data_dir/geoserver-environment.properties
+data_dir/gwc/*
+!data_dir/gwc/geowebcache.xml
+data_dir/logs/*
+!data_dir/logs/*.properties

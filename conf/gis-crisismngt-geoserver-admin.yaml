@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: gis-crisismngt-geoserver-admin
+  labels:
+    app: gis-crisismngt-geoserver
+type: Opaque
+data:
+  # The values below are base64. So, e.g. username is: echo -n <username> | base64
+  # gives the base64 value. Fill it in below!
+  GEOSERVER_USER: <username> | base64
+  GEOSERVER_PASSWORD: <password> | base64

@@ -1,0 +1,15 @@
+<layer>
+  <name>e_stations</name>
+  <id>LayerInfoImpl-6fe3c591:1697bfb6079:-7ff1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-6fe3c591:1697bfb6079:-7ff4</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-6fe3c591:1697bfb6079:-7ff2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,15 @@
+<layer>
+  <name>nme_ms_verstoorde_aansl</name>
+  <id>LayerInfoImpl-285e6c20:1697c85d550:-7fe8</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-285e6c20:1697c85d550:-7feb</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-285e6c20:1697c85d550:-7fe9</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

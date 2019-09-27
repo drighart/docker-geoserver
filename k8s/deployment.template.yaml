@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {appName}
+  namespace: {namespace}
+  labels:
+    app: {appName}
+spec:
+  selector:
+    matchLabels:
+      app: {appName}
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      name: {appName}
+      labels:
+        app: {appName}
+    spec:
+      containers:
+      - name: {appName}
+        image: {image}
+        resources:
+          limits:
+            cpu: 2
+            memory: 8Gi
+          requests:
+            cpu: 1
+            memory: 4Gi
+        envFrom:
+          - configMapRef:
+              name: gis-crisismngt-geoserver-config
+        env:
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: gis-crisismngt-geoserver-secret
+              key: postgres-user
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: gis-crisismngt-geoserver-secret
+              key: postgres-password
+        - name: GEOSERVER_DATA_DIR
+          value: /var/lib/geoserver_data
+        securityContext:
+          privileged: true
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
