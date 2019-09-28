@@ -111,11 +111,6 @@ RUN rm -f /tmp/resources/overlays/README.txt && \
 # Overwrite web.xml configuration file
 COPY webapps/geoserver/WEB-INF/web.xml $CATALINA_HOME/webapps/geoserver/WEB-INF
 
-# Overwrite data_dir
-ADD data_dir /var/lib/geoserver_data
-#als geoserver environments aanwezig zijn, verwijderen
-RUN rm -rf /var/lib/geoserver_data/geoserver-environment.properties
-
 # Optionally remove Tomcat manager, docs, and examples
 ARG TOMCAT_EXTRAS=false
 RUN if [ "$TOMCAT_EXTRAS" = false ]; then \
